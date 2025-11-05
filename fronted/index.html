@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Binary Sniper — Real</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Binary Sniper — Real</h1>
+        <div class="owner">Owner: David Mamun William</div>
+      </div>
+      <div id="serverTime">Server: —</div>
+    </header>
+
+    <div class="controls">
+      <select id="pairSelect"></select>
+      <select id="modeSelect">
+        <option value="normal">Normal Mode</option>
+        <option value="god">God Mode</option>
+      </select>
+      <button id="startBtn" class="btn">Start</button>
+      <button id="nextBtn" class="btn">Next</button>
+      <button id="autoBtn" class="btn">Auto-Pick Best</button>
+      <button id="debugBtn" class="btn">Force (debug)</button>
+    </div>
+
+    <div class="panel" id="signalPanel">
+      <div id="signalTitle">No signal yet — press Start or Auto-Pick</div>
+      <div id="signalMeta"></div>
+      <div id="signalBody"></div>
+      <div class="panel-small">
+        <div class="stat" id="stat_conf">Confidence: —</div>
+        <div class="stat" id="stat_mode">Mode: —</div>
+        <div class="stat" id="stat_entry">Entry: —</div>
+      </div>
+      <div id="countdown" class="count">Countdown: —</div>
+    </div>
+
+    <div class="panel log" id="logBox"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+        </html>
